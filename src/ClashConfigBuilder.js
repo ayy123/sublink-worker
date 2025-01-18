@@ -159,8 +159,8 @@ export class ClashConfigBuilder extends BaseConfigBuilder {
                     auth: proxy.password,
                     'skip-cert-verify': proxy.tls.insecure,
                 };
-			case 'trojan':
-				return {
+            case 'trojan':
+                return {
                     name: proxy.tag,
                     type: proxy.type,
                     server: proxy.server,
